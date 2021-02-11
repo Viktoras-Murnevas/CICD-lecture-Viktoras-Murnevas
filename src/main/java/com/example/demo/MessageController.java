@@ -22,6 +22,7 @@ public class MessageController {
     @GetMapping(value = "/")
     public String getMessage() {
         StringBuilder result = new StringBuilder(BE_SUCCESS_MESSAGE);
+//        StringBuilder result = new StringBuilder()BE_SUCCESS_MESSAGE,  controller.helloWorld());
 
         try {
             List<Message> messages = repo.findAll();
